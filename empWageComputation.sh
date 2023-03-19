@@ -1,4 +1,4 @@
-
+ 
 
 
 echo " Welcome to Employee Wage Computation Program"
@@ -33,3 +33,18 @@ else
 salary=0;
 
 fi
+
+case $empcheck in
+       $isfulltime)
+       emphr=8
+        ;; 
+
+       $isparttime)
+       emphr=4
+        ;;
+
+       *)
+
+salary=$(($emphr*$emprateperhr));
+
+esac
